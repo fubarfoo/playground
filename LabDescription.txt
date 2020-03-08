@@ -1,0 +1,18 @@
+Lab
+
+My lab is leveraging vEOS.  The configuration is as follows:
+
+Dell R410 server running Eve-NG to host the vEOS instances (currently have a two spine,
+ 6 leaf and 3 vEOS images acting as end hosts topology).
+
+ The Dell R410 has 2 NICs, one which is connected directly to my home network (Vlan 1) and
+ the other which connects to the vEOS switch management network (Vlan 100).  The switch these
+ are connected to allows routing between the two networks, but allows me to do ZTP and
+ other functions in the lab environment.
+
+ Also in the lab, I have a KVM VM running Cloudvision (Arista's management and automation platform)
+ as I plan to look to leverage the API for that in the future to integrate with ansible.
+
+ I'm able to interact with my vEOS instances from my laptop (I have a Linux VM I use for running ansible)
+ as that allows a pristine "dev" environment and not having to worry about coordinating virtual environments.
+
